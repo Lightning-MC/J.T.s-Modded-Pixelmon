@@ -1,0 +1,547 @@
+# Settings for controlling the auto-battler for AFK players.
+AFKHandler {
+    # The time in seconds before a player in a battle is declared to be AFK and the auto-battle code takes over for them.
+    afkActivateSeconds=90
+    # The time in seconds before the auto-battle handler picks a move automatically each turn.
+    afkHandlerTurnSeconds=15
+    # Have auto-battle take over if the player is AFK during a battle. Activates after the specified time period and gives specified time for each turn after that.
+    enableAFKHandler=false
+}
+# Settings for the Better Spawner.
+"Better Spawning" {
+    # The maximum number of entities (NPC or Pokémon) that can spawn per player. Lower for better performance.
+    entitiesPerPlayer=40
+    # The horizontal radius of the areas randomly selected near the player to do spawning in. Lower for better performance but less reliable spawning.
+    horizontalSliceRadius=16
+    # How many ticks 'lead' the player tracking spawner will give players based on their motion. This tries to spawn at locations the player is about to be.
+    horizontalTrackFactor=100
+    # The maximum distance from the player that entities may spawn.
+    maximumDistanceFromCentre=64
+    # The minimum number of blocks between a spawned entity and an existing living entity.
+    minimumDistanceBetweenSpawns=8
+    # The minimum distance from the player that entities may spawn. The lower this is, the closer entities will spawn to players.
+    minimumDistanceFromCentre=8
+    # The number of spawn passes made per minute. Decrease for better performance.
+    spawnFrequency=60
+    # Which folder to use under ./pixelmon/spawning/ for spawn sets.
+    spawnSetFolder=default
+    # The maximum number of spawns in a single spawn cycle for a single player. Lower for slower spawning and better performance.
+    spawnsPerPass=2
+    # The vertical radius of the areas randomly selected near the player to do spawning in. Lower for better performance but less reliable spawning. Larger than horizontal to better match player behavior.
+    verticalSliceRadius=16
+    # How many ticks 'lead' the player tracking spawner will give players based on their vertical motion. Typically best as zero due to the interference jumping can cause.
+    verticalTrackFactor=0
+}
+# Settings for breeding behavior.
+Breeding {
+    # Allows the placement of ranch blocks, which are required for breeding Pokemon.
+    allowBreeding=true
+    # Allows two Ditto to breed together to produce Eggs with random Pokémon inside.
+    allowDittoDittoBreeding=true
+    # Allow the ranch expansion.
+    allowRanchExpansion=true
+    # Enable random Eggs from Ditto-Ditto breeding to contain Legendaries.
+    allowRandomBreedingEggsToBeLegendary=false
+    # Enables random Eggs from /pokegiveegg to contain Legendaries.
+    allowRandomSpawnedEggsToBeLegendary=false
+    # Seconds between running the environment check for breeders, requires useBreedingEnvironment to be enabled
+    breedingEnvironmentCheckSeconds=500
+    # Number of world ticks needed to increase the breeding stage.
+    breedingTicks=18000
+    # Number of stages to go through before breeding occurs (1-5).
+    numBreedingStages=5
+    # Sets the number of steps per Egg cycle. Lower numbers hatch Eggs faster.
+    stepsPerEggCycle=4
+    # Control speed of breeding based on the blocks set in the area. If false, will set breeding speed to 1.0x.
+    useBreedingEnvironment=true
+}
+Economy {
+    # Amulet Coin Money Multiplier (Ex: 0.5 is 50% less | 1.5 is 50% more)
+    amuletCoinMultiplier=2
+    # Whether or not to enable money aspect of G-Max Gold Rush
+    goldRushEnabled=true
+    # Amount to increment per turn used in a row. Maxes out to x6 this number.
+    goldRushSuccessionIncrement=100
+    # Happy Hour Money Multiplier (Ex: 0.5 is 50% less | 1.5 is 50% more)
+    happyHourMultiplier=2
+    # Pay Day Money Multiplier (Multiplied against Pokemon level)
+    payDayMultiplier=5
+}
+# Options for the elevator.
+Elevator {
+    # Maximum search range up/down for a pairing elevator.
+    elevatorSearchRange=16
+}
+# Settings for controlling external moves.
+ExternalMoves {
+    # Allow destructive external moves (includes Cut, Dig, Explode, LightFire, Lightning, RockSmash)
+    allowDestructiveExternalMoves=true
+    # Allows the use of external moves such as Rock Smash and Cut.
+    allowExternalMoves=true
+}
+# General settings for the world.
+General {
+    # Allow the anvil to replace finished items with starting item from player's inventory without manual placing.
+    allowAnvilAutoreloading=false
+    # Allow player to throw Poke Balls from hotbar. If false, Poke Balls can only be thrown in battles.
+    allowCaptureOutsideBattle=true
+    # Whether pokemon can dynamax or not
+    allowDynamax=true
+    # Allows move tutors that teach event moves to spawn naturally.
+    allowEventMoveTutors=true
+    # Allow Pay Day to award PokéDollars when used.
+    allowPayDayMoney=true
+    # Allow players to plant Apricorns in the ground.
+    allowPlanting=true
+    # Server-side, whether players can use Pokémon editors. Client-side, whether other players can use a Pokémon editor on the player with the setting.
+    allowPokemonEditors=true
+    # Allow the player to nickname Pokemon (not a server-wide setting, just a client setting).
+    allowPokemonNicknames=true
+    # Determines if player vs. player battles give Pokemon experience. No EXP gain in PvP when false.
+    allowPvPExperience=true
+    # Allow players to ride Pokemon. If false, no Pokemon can be ridden (server-side option).
+    allowRiding=true
+    # If enabled, TMs are reusable. If disabled, TMs are consumed upon use.
+    allowTMReuse=true
+    # Determines if player vs. Trainer battles give Pokemon experience. No EXP gain in Trainer when false.
+    allowTrainerExperience=true
+    # Allow creepers, skeletons, etc. to spawn in the world. DANGER - can kill you while battling.
+    allowVanillaMobs=false
+    # Allows vanilla music to be played
+    allowVanillaMusic=false
+    # Whether or not players will automatically have a Mega ring.
+    alwaysHaveMegaRing=false
+    # Award photos to players who defeat wild Pokemon.
+    awardPhotos=false
+    # Radius for a pokeball to check for a pokemon to give slack
+    ballSlackRadius=1
+    # The type of AI to use for boss Pokemon in battle. \n1: Choose moves randomly. 2: Choose the most damaging move possible (with type match-ups), ignoring status moves. 3: Use both offensive and status moves.
+    battleAIBoss=2
+    # The type of AI to use for NPC Trainers in battle. \n1: Choose moves randomly. 2: Choose the most damaging move possible (with type match-ups), ignoring status moves. 3: Use both offensive and status moves. 4: Use all moves intelligently and switch out when advantageous.
+    battleAITrainer=3
+    # The type of AI to use for wild Pokemon in battle. \n1: Choose moves randomly. 2: Choose the most damaging move possible (with type match-ups), ignoring status moves. 3: Use both offensive and status moves.
+    battleAIWild=1
+    # Whether sleeping in a bed heals a player's Pokemon.
+    bedsHealPokemon=true
+    # Multipier for the speed at which berry trees grow. Can be between 0.1 and 1000.
+    berryTreeGrowthMultiplier=1
+    # pixelmon.config.bikeSpeed.comment
+    bikeSpeed=0.7
+    # Whether or not out-of-battle wild Pokémon can be hurt by physical attacks.
+    canPokemonBeHit=false
+    # Grace period in seconds for catch combos to persist between sessions
+    catchComboRestoreSeconds=1800
+    # Chance of Catching Charm dropping from successful captures
+    catchingCharmMaxChance=1500
+    # The radius in chunks around a player that Pokemon can spawn within.
+    chunkSpawnRadius=6
+    # Allow players to use cloning machines to clone Mew into Mewtwo.
+    cloningMachineEnabled=true
+    # Sets the amount of boxes players have in their PCs (capped at 256 per player).
+    computerBoxes=30
+    # Should Curries trigger level event from API
+    curryTriggersLevelEvent=true
+    # If players party and computer are forcefully saved upon every world save (If false, you should be saving data via /saveall, or risk data loss)
+    dataSaveOnWorldSave=true
+    # The minimum number of blocks away from the nearest player a Pokémon can be when despawned.
+    despawnRadius=80
+    # 1/x chance of spawning a Dynamax Energy Beam
+    dynamaxEnergyBeam=5000
+    # The scale multiplier for Dynamax Multiplier
+    dynamaxScale=3
+    # When mounted, enables steering the Pokemon by looking.
+    enablePointToSteer=true
+    # Enables Discord Rich Presense
+    enableRichPresence=false
+    # Allow wild Pokemon to initiate battles.
+    enableWildAggression=true
+    # If enabled, players will be able to challenge others by throwing a Pokemon at the enemy player rather than a Pokemon.
+    engagePlayerByPokeBall=true
+    # Max chance of a Exp. Charm rare drop from defeating Pokemon. (Set to 0 or less to disable drop completely)
+    expCharmMaxChance=3000
+    # Multiplier for experience gained in Pokemon battles.
+    expModifier=1
+    # What will happen if a battle is force-ended without a proper conclusion. 0: A winner is determined based on the number of remaining Pokémon (with % HP as a tiebreaker). 1: The battle is considered a draw. 2: The battle is considered abnormally ended.
+    forceEndBattleResult=0
+    # Adjusts the variation in size caused by growth (0-2). 1 is normal.
+    growthScaleModifier=1
+    # How fast in ticks Healers should take to heal Pokemon
+    healerSpeed=100
+    # Sets The number of times a Azelf, Mesprit and Uxie can enchant a ruby.
+    lakeTrioMaxEnchants=3
+    # Should Level Candy trigger level event from API
+    levelCandyTriggersLevelEvent=true
+    # How many times Lunala, Solgaleo, and Necrozma can each open a wormhole.
+    lightTrioMaxWormholes=3
+    # Lure Module Radius.
+    lureRadius=5
+    # Shiny calculation uses 1/X to get odds of becoming Shiny.
+    lureShinyChance=2048
+    # Amount of spawns from a lure module.
+    lureSpawns=10
+    # Time in ticks between each lure module spawn.
+    lureTimer=1200
+    # Chance of Mark Charm dropping from Mark Pokemon spawns
+    markCharmMaxChance=500
+    # The maximum level that a Pokémon can be.
+    maxLevel=100
+    # The maximum plants allowed within a chunk. Applies to Apricorns and Berries.
+    maximumPlants=32
+    # Allow each player to take multiple photos of the same Pokémon.
+    multiplePhotosOfSamePokemon=true
+    # Sets how far Pokemon names and levels can be seen from (client setting only). 1=Default, 2=Farther, 3=Far
+    namePlateRange=1
+    # Requires flying and water Pokemon mounts to have HM moves Fly or Surf (respectively) to be able to ride them.
+    needHMToRide=false
+    # Chance of Oval Charm dropping from Mark Pokemon spawns
+    ovalCharmMaxChance=500
+    # Should Pokemon be healed when placed in a PC
+    pcsHealPokemon=false
+    # Chance of the Pickup Ability picking up an item after a battle (1/rate). 0 disables this.
+    pickupRate=10
+    # Chance to catch PokeRus virus from wild battles
+    pokeRusChance=21845
+    # Chance for PokeRus to spread to another Pokemon
+    pokeRusSpreadRate=20000
+    # Max time for PokeRus to last on a Pokemon
+    pokeRusTimerMax=345600
+    # Minimum time for PokeRus to last on a Pokemon
+    pokeRusTimerMin=86400
+    # Allows wild Pokemon to drop items like feathers, etc. on death.
+    pokemonDropsEnabled=true
+    # Prints more detailed error messages to the server.log file if enabled.
+    printErrors=true
+    # Allow/Deny ranch blocks to drop their upgrades on destroy
+    ranchBlocksDropUpgrades=true
+    # Should Rare Candy trigger level event from API
+    rareCandyTriggersLevelEvent=true
+    # If enabled, consumable held items will be returned to Pokémon at the end of player vs. player battles.
+    returnHeldItems=true
+    # Set Legendary shrines to one use (false) or multiple use (true).
+    reusableBirdShrines=false
+    # Multipier for the speed that mounted Pokémon travel at. Can be between 0 and 1.
+    ridingSpeedMultiplier=1
+    # Increases size of Pokemon models in-game by 30%.
+    scalePokemonModels=true
+    # Time in seconds that the spawn blocking effect look for (Lower time equals more world scans for the tile entity)
+    scarecrowEffectPeriod=30
+    # Radius that the Scarecrow blocks spawns for
+    scarecrowRadius=32
+    # Should IVs/EVs be displayed in Pokemon Summary?
+    showIVsEVs=false
+    # Whether to show wild Pokémon names on their nameplates.
+    showWildNames=true
+    # Allow Legendary bird shrines to spawn randomly in world.
+    spawnBirdShrines=true
+    # Allow random generation of structures such as Pokemon Centers, shrines, and other buildings if true.
+    spawnStructures=true
+    # If true, must be opped to use spawners. If false, must be in Creative mode.
+    spawnersOpOnly=true
+    # Lets you choose to give/not give a starter to a player on join (via the Pixelmon starter screen).
+    starterOnJoin=true
+    # The time taken before syncing to the system clock (in seconds).
+    systemTimeSyncInterval=30
+    # Set traders to one use (false) or multiple use (true).
+    tradersReusable=false
+    # Whether to display a GUI with Pokémon drops after defeating a regular Pokémon.
+    useDropGUI=true
+    # Enabled external breeding block jsons, can be edited server-side.
+    useExternalJSONFilesBreedingConditions=false
+    # Load external configuration files used for drops from the "pixelmon/drops" folder. If set to true and the "pixelmon/drops" folder does not exist, Pixelmon will create the folder and dump the existing files there.
+    useExternalJSONFilesDrops=false
+    # Use external file to configure Pokemon that spawn from Generations Shrine
+    useExternalJSONFilesGenerationsGroup=false
+    # Enables external json editing for editing moves. NOTICE: When we edit moves between versions, you will have to apply changes manually. They will NOT generate updated info on their own. Use a JSON parser like https://jsonlint.com/ when editing each move, as a syntax error can have nasty consequences. Do NOT touch if you aren't sure what you're doing.
+    useExternalJSONFilesMoves=false
+    # Load external configuration files used for NPCs from the "pixelmon/npcs" folder. If set to true and the "pixelmon/npcs" folder does not exist, Pixelmon will create the folder and dump the existing files there.
+    useExternalJSONFilesNPCs=false
+    # Enables external json editing for pokemon. NOTICE: When we edit Pokemon between versions, you will have to apply changes manually. They will NOT generate updated info on their own. Use a JSON parser like https://jsonlint.com/ when editing each Pokemon, as a syntax error can have nasty consequences. Do NOT touch if you aren't sure what you're doing.
+    useExternalJSONFilesPokemon=false
+    # Load external configuration files used for battle rules from the "pixelmon/rules" folder. If set to true and the "pixelmon/rules" folder does not exist, Pixelmon will create the folder and dump the existing files there.
+    useExternalJSONFilesRules=false
+    # Use external file to configure Pokemon particle colors from Shrines.
+    useExternalJSONFilesSpawnColors=false
+    # Load external configuration files used for spawning from the "pixelmon/spawning" folder. If set to true and the "pixelmon/spawning" folder does not exist, Pixelmon will create the folder and dump the existing files there.
+    useExternalJSONFilesSpawning=false
+    # Load external configuration files used for structures from the "pixelmon/structures" folder. If set to true and the "pixelmon/structures" folder does not exist, Pixelmon will create the folder and dump the existing files there.
+    useExternalJSONFilesStructures=false
+    # Use external trades for npc traders
+    useExternalJSONFilesTrades=false
+    # Lets your world follow real world time or not (uses the server's system clock).
+    useSystemTimeForWorldTime=false
+    # 1/x chance of spawning a Wishing Star
+    wishingStar=5000
+    # Percentage of the PokeDex that a player must have completed for wishing stars to spawn on them.
+    wishingStarDexCompletion=0.6000000238418579
+    # Saves Pixelmon entities to file when world saves (greatly increases save file size and save time if true). Required for the morph mod.
+    writeEntitiesToWorld=false
+}
+# Graphics settings.
+Graphics {
+    # Show each Pokemon's health in a bar above their heads.
+    drawHealthBars=false
+    # Use the low resolution textures for Pokemon and Poke Balls. Useful for low-end systems.
+    lowResTextures=false
+    # Set whether or not the player can control the camera during battles (sets to sphere based camera positioning)
+    playerControlCamera=true
+    # Block distance that Pokemon render from
+    pokemonRenderDistance=64
+    # Multiplier of the 64 distance usually used for rendering.
+    renderDistanceWeight=2
+    # Display the currently selected Pokemon's attack target on the screen.
+    showCurrentAttackTarget=true
+    # Set whether or not to switch to an external camera during battles.
+    useBattleCamera=true
+    # Use the original Pokemon textures for statues.
+    useOriginalPokemonTexturesForStatues=true
+    # Use the SMD normal maps for shading Poke Balls.
+    useSmoothShadingOnPokeBalls=true
+    # Use the SMD normal maps for shading Pokemon.
+    useSmoothShadingOnPokemon=true
+}
+Hordes {
+    # Max amount of Pokemon that can spawn in a single Horde Battle
+    hordeMaxSpawnAmount=5
+    # Max level Horde Pokemon should spawn at
+    hordeMaxSpawnLevel=8
+    # Minimum amount of Pokemon that should spawn should a Horde Battle trigger
+    hordeMinSpawnAmount=3
+    # Minimum level Horde Pokemon should spawn at
+    hordeMinSpawnLevel=4
+    # Chance a Horde Battle should trigger
+    hordeTriggerChance=20
+}
+Incubator {
+    # pixelmon.config.ticksPerStep.comment
+    ticksPerStep=20
+}
+# This section is designed for large servers (or modpacks) to finely tune performance. It's not recommended to touch this as a singleplayer user, although lower end PC's can see increased performance. Servers will see massive performance improvements by raising the below values, however they are not without cost. This alters a Wild Pokemon's tick rate. For example, if you were to set tickRate24Radius to 5, you will see very visible stutters in a Pokemon's movement. This is why we recommend keeping the value low. Even so, by default they tick every single tick. Simply raising to 2 will double your performance and Pokemon still move smoothly. Raising any of the values to 3 is where you'll start seeing some slower movements, which are not noticeable the further the player is. Remember, there are 20 ticks per second.
+Performance {
+    # If a player is within a 24 block radius of a wild Pokemon, how often should it tick? For a server with an average player count of 40 or less, it's recommended to leave this as default. For servers with higher player counts, we recommend changing this setting to 2.
+    tickRate24Radius=1
+    # If a player is within a 48 block radius of a wild Pokemon, how often should it tick? For servers with higher player counts, we recommend changing this setting to 3.
+    tickRate48Radius=2
+    # If a player exceeds a 48 block radius of a wild Pokemon, how often should it tick?  For servers with higher player counts, we recommend changing this setting to 4. Pokemon usually despawn at this range, however despawns are not instant and depending on your Sponge/Bukkit/Spigot/Forge settings, they can linger for a little while longer than you'd like them to. This will limit their impact greatly until they're queued for despawn.
+    tickRateHigherRadius=3
+}
+# Settings for PixelUtilities features.
+PixelUtilities {
+    # Allows Legendaries to spawn from blocks (i.e., grass).
+    blocksHaveLegendaries=false
+    # Specify the coordinates of the event Poke Gift chest here.
+    eventCoords=[
+        notConfigured
+    ]
+    # Enable/Disable Legendaries from being added to the event Poke Gift.
+    eventHasLegendaries=false
+    # Each Pokemon has a 1/10 chance of being a Shiny.
+    eventHasShinies=false
+    # Sets the maximum amount of Pokemon that are in spawned Poke Gifts.
+    eventMaxPokemon=1
+    # Should an event Poke Gift spawn?
+    eventPokeGiftLoad=false
+    # The rate of Shiny Pokemon appearing in a Poke Gift (1/x).
+    eventShinyRate=10
+    # Define a custom date for Poke Gift events (day then month).
+    eventTime="D/M"
+    # Allows Poke Gifts to be used (both placing and using, prevention against spam).
+    pokeGiftHaveEvents=true
+    # Enable multiple players to get the Pokemon from the gift.
+    pokeGiftReusable=false
+    # Scale grass battles to players' team levels?
+    scaleGrassBattles=false
+}
+# Settings for controlling PokeLoot chest spawns and behavior.
+PokeLoot {
+    # Allow Hidden Grottos to spawn in the world.
+    spawnGrotto=true
+    # Allows invisible PokeChests to spawn around the world randomly.
+    spawnHidden=true
+    # Default spawn mode (FCFS=0, PL1D=1, PUD=2, TIMED=3). FCFS = First Come First Serve, only one player can loot chest, then chests vanishes. PL1D = Player 1 Drop, chest gives one drop per person. Chest remains for others to use once each. PUD = Player Unlimited Drops, chests can be used infinitely by all players. TIMED = Each player allowed to loot again after specified time interval (individual timers). Chest remains after looting.
+    spawnMode=0
+    # Allows normal visible PokeChests to spawn around the world randomly.
+    spawnNormal=true
+    # Chest spawn rate. 0: 1 per 64 chunks. 1: 1 per 32 chunks. 2: 1 per 18 chunks. 3: 1 per 10 chunks
+    spawnRate=1
+    # Sets frequency (hours) that a player can reuse a timed loot chest (both placed in Creative and naturally spawned) if set to TIMED.
+    timedLootReuseHours=24
+    # Sets frequency (hours) that a player can reuse a pokestop (both placed in Creative and naturally spawned)
+    timedPokeStopReuseHours=24
+    # Whether or not a wild Pokemon could pop out on chance from a PokeLoot
+    wildPokemonHidingInLoot=true
+    # 1 in X chance of a Wild Pokemon spawning from a loot.
+    wildPokemonLootSpawnChance=20
+}
+"Server Info" {
+    # Your server name. This will display on Discord.
+    serverDisplayName=null
+    # Server icon name. Contact Deltric for this.
+    serverIconName=null
+    # Server key.
+    serverKey=null
+}
+"Shiny Rates" {
+    # Catch Combo T1 11-20: Odds without Shiny Charm 1/(ShinyRate)
+    catchComboTier1=1728
+    # Catch Combo T1 11-20: Odds with Shiny Charm 1/(ShinyRate)
+    catchComboTier1Charm=1296
+    # Catch Combo T2 21-30: Odds without Shiny Charm 1/(ShinyRate)
+    catchComboTier2=1296
+    # Catch Combo T2 21-30: Odds with Shiny Charm 1/(ShinyRate)
+    catchComboTier2Charm=972
+    # Catch Combo T2 31+: Odds without Shiny Charm 1/(ShinyRate)
+    catchComboTier3=972
+    # Catch Combo T3 31+: Odds with Shiny Charm 1/(ShinyRate).
+    catchComboTier3Charm=729
+    # Whether or not Catch Combo Shiny Rates only spawn the combos species with those rates for shiny.
+    enableCatchComboShinyLock=true
+    # Whether or not Catch Combos should influence shiny rate. If disabled only shinySpawnRate & shinyRateWithCharm are factored.
+    enableCatchCombos=true
+    # Shiny rate when using Shiny Charm and Catch Combo is below T1 or when catch combo is disabled.
+    shinyRateWithCharm=3072
+}
+Shrine {
+    # pixelmon.config.disableArceusMethod.comment
+    disableArceusMethod=false
+    # Limits Ho-Oh to only be capable of summoning 1 Raikou, 1 Entei, and 1 Suicune.
+    limitHoOh=false
+    # The amount of times a Mew can be cloned.
+    limitMew=3
+    # Limits Rayquaza to only be capable of summoning 1 Groudon and 1 Kyogre.
+    limitRayquaza=false
+    # Limits Regigigas to only be capable of summoning 1 Regirock, 1 Registeel, and 1 Regice.
+    limitRegigigas=false
+}
+# Settings that control what Pokemon spawns and how many of them spawn.
+Spawning {
+    # Generations of Pokémon to Spawn
+    Gens {
+        # Pokedex 1-151
+        Gen1=true
+        # Pokedex 152-251
+        Gen2=true
+        # Pokedex 252-386
+        Gen3=true
+        # Pokedex 387-493
+        Gen4=true
+        # Pokedex 494-649
+        Gen5=true
+        # Pokedex 650-721
+        Gen6=true
+        # Pokedex 722-809
+        Gen7=true
+        # Pokedex 810-898
+        Gen8=true
+    }
+    # Average number of ticks before spawning a boss Pokémon
+    bossSpawnTicks=1200
+    # Forces wild Pokemon to despawn after a battle.
+    despawnOnFleeOrLoss=false
+    # Displays server-wide announcement 'A Legendary has spawned in <name> biome' when a Legendary spawns.
+    displayLegendaryGlobalMessage=true
+    # Number of blocks for a level increase when Spawn Levels By Distance enabled.
+    distancePerLevel=30
+    # Chance of a Pokemon spawning with G-Max Factor
+    gmaxFactorSpawnRate=512
+    # When a Minecraft Village spawns, there is a 12.5% chance to spawn a Gym. Max value is 1- will theoretically guarantee a spawn, but due to terrain checks and conditions (such as hills, etc) this will be more realistically 50%.
+    gymChance=1
+    # Chance of a wild Pokemon spawning with its hidden Ability (1/rate). 0 disables hidden Ability spawns.
+    hiddenAbilitySpawnRate=150
+    # Max number of flying Pokemon at one time (keep this low).
+    maxFlyingPokemon=2
+    # Max number of land Pokemon at one time.
+    maxLandPokemon=40
+    # Maximum level Pokemon will spawn at when Spawn Levels By Distance enabled.
+    maxLevelByDistance=60
+    # Max number of bosses at one time.
+    maxNumBosses=1
+    # Max number of NPCs at one time.
+    maxNumNPCs=4
+    # Max number of totems at one time.
+    maxNumTotems=1
+    # The maximum number of spawn events (not number of Pokémon) that can spawn in a single tick
+    maxSpawnsPerTick=100
+    # Max number of underground Pokemon at one time.
+    maxUndergroundPokemon=20
+    # Max number of water Pokemon at one time.
+    maxWaterPokemon=20
+    # Replaces Minecraft's villagers with Pixelmon NPCs.
+    replaceMCVillagers=true
+    # Shiny calculation uses 1/(Shiny rate) to get odds of becoming Shiny.
+    shinySpawnRate=4096
+    # List of dimensions that Pokemon will spawn in.
+    spawnDimensions=[
+        0
+    ]
+    # Sets spawning of Gyms in close proximity to newly generated towns on or off.
+    spawnGyms=true
+    # Sets whether or not Pokemon levels are determined by distance from the World's spawn point.
+    spawnLevelsByDistance=false
+    # Poke Marts will spawn with shopkeepers in Minecraft's towns.
+    spawnPokeMarts=true
+    # Number of ticks before an attempt to spawn entities is made.
+    spawnTickRate=60
+    # Average number of ticks before spawning a totem Pokémon
+    totemSpawnTicks=1200
+    # Controls the rate of an Ultra Shiny spawning rather than a normal Shiny.
+    ultraShinySpawnRate=16
+    # If true, Pokémon will spawn with the most recent moves in their level-up movepools. If false, Pokémon will spawn with random moves from their level-up movepools.
+    useRecentLevelMoves=false
+}
+Starters {
+    # Level (min=5, max=100).
+    level=5
+    # Shiny starters.
+    shiny=false
+    # List of starters (max of 21).
+    starterList=[
+        Bulbasaur,
+        Squirtle,
+        Charmander,
+        Chikorita,
+        Totodile,
+        Cyndaquil,
+        Treecko,
+        Mudkip,
+        Torchic,
+        Turtwig,
+        Piplup,
+        Chimchar,
+        Snivy,
+        Oshawott,
+        Tepig,
+        Chespin,
+        Froakie,
+        Fennekin,
+        Rowlet,
+        Popplio,
+        Litten,
+        Grookey,
+        Sobble,
+        Scorbunny
+    ]
+}
+Storage {
+    # The interval in seconds that the async saver will save all queued data to disk.
+    asyncInterval=60
+    # Activates off-main thread saving of party and computer data. (server only)
+    useAsyncSaving=false
+}
+Timing {
+    # The time for the fur to regrow on pokemon in milliseconds
+    furRegrowth=600000
+    # The time for Hoopa to revert forms in milliseconds
+    hoopaUnbound=600000
+}
+"World Gen" {
+    # Enable or Disable the world generation of Poke Grass
+    generatePokeGass=true
+    # Biomes that PokeLoot should NOT spawn in.
+    pokeChestBiomeBlackList=[
+        oceans
+    ]
+    # Biomes that PokeLoot CAN spawn in.
+    pokeChestBiomeWhiteList=[
+        all
+    ]
+}

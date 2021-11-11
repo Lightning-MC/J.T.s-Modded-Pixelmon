@@ -1,0 +1,227 @@
+{
+    "images": {
+        "minecraft": {
+            "image": "custommainmenu:textures/menu/logo.png",
+            "posX": -80,
+            "posY": 0,
+            "width": 160,
+            "height": 70,
+            "alignment": "top_center"
+        }
+    },
+    
+    "buttons": {
+        "singleplayer": {
+            "text": "menu.singleplayer",
+            "posX": -213,
+            "posY": 82,
+            "width": 80,
+            "height": 20,
+            "alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openGui",
+                "gui": "singleplayer"
+            }
+        },
+        
+        "multiplayer": {
+            "text": "menu.multiplayer",
+            "posX": -133,
+            "posY": 82,
+            "width": 80,
+            "height": 20,
+            "alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openGui",
+                "gui": "custom.servers"
+            }
+        },
+        
+		"Website": {
+            "text": "Website",
+            "posX": -53,
+            "posY": 82,
+            "width": 57,
+            "height": 20,
+			"alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openLink",
+                "link": "https://pixelmongenerations.com/"
+            }
+        },
+        
+        "Discord": {
+            "text": "Discord",
+            "posX": 4,
+            "posY": 82,
+            "width": 55,
+            "height": 20,
+            "alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openLink",
+                "link": "https://discord.gg/BcueHsGh7h"
+            }
+        },
+        
+        "Changelog": {
+            "text": "Changelog",
+            "posX": 59,
+            "posY": 82,
+            "width": 68,
+            "height": 20,
+            "alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openGui",
+                "gui": "custom.changelog"
+            }
+        },
+        
+        "Logs": {
+            "text": "Logs",
+            "posX": 127,
+            "posY": 82,
+            "width": 42,
+            "height": 20,
+            "alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action":  {
+                "type": "openFolder",
+                "folderName":  "logs"
+            }
+        },
+        
+        "Wiki": {
+            "text": "Wiki",
+            "posX": 169,
+            "posY": 82,
+            "width": 45,
+            "height": 20,
+            "texture": "custommainmenu:textures/menu/button.png",
+			"alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openLink",
+                "link": "https://pixelmongenerations.com/wiki"
+            }
+        },
+        
+        "version": {
+            "text": "Pixelmon Generations v8.6.0",
+            "posX": -75,
+            "posY": 70,
+            "width": 150,
+            "height": 12,
+            "alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148
+        },
+        
+		"Options": {
+            "text": "Options",
+            "posX": -102,
+            "posY": -20,
+            "width": 57,
+            "height": 20,
+			"alignment": "bottom_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openGui",
+                "gui": "options"
+            }
+        },
+        
+        "Language": {
+            "text": "Language",
+            "posX": -45,
+            "posY": -20,
+            "width": 55,
+            "height": 20,
+            "alignment": "bottom_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openGui",
+                "gui": "languages"
+            }
+        },
+        
+        "Mods": {
+            "text": "Mods",
+            "posX": 10,
+            "posY": -20,
+            "width": 50,
+            "height": 20,
+            "alignment": "bottom_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openGui",
+                "gui": "mods"
+            }
+        },
+		
+        "Quit": {
+            "text": "Quit",
+            "posX": 60,
+            "posY": -20,
+            "width": 45,
+            "height": 20,
+            "alignment": "bottom_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action":  {
+                "type": "quit"
+            }
+        }
+    },
+
+    "labels": {
+
+    },
+    "texts": {
+
+    },
+    
+    "other": { 
+        "background": {
+            "image": "custommainmenu:textures/menu/bg5.png",
+            "mode": "fill"
+        }
+    }
+}

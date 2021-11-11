@@ -1,0 +1,411 @@
+{
+    "images": {
+        "minecraft": {
+            "image": "custommainmenu:textures/menu/logo.png",
+            "posX": -80,
+            "posY": 0,
+            "width": 159,
+            "height": 70,
+            "alignment": "top_center"
+        },
+        "dropdown": {
+            "image": "custommainmenu:textures/menu/dropdown.png",
+            "posX": -213,
+            "posY": 102,
+            "width": 427,
+            "height": 118,
+            "alignment": "top_center"
+        }
+    },
+    
+    "buttons": {
+        "singleplayer": {
+            "text": "menu.singleplayer",
+            "posX": -213,
+            "posY": 82,
+            "width": 80,
+            "height": 20,
+            "alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openGui",
+                "gui": "singleplayer"
+            }
+        },
+        
+        "multiplayer": {
+            "text": "menu.multiplayer",
+            "posX": -133,
+            "posY": 82,
+            "width": 80,
+            "height": 20,
+            "alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openGui",
+                "gui": "custom.servers"
+            }
+        },
+        
+		"Website": {
+            "text": "Website",
+            "posX": -53,
+            "posY": 82,
+            "width": 57,
+            "height": 20,
+			"alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openLink",
+                "link": "https://pixelmongenerations.com/"
+            }
+        },
+        
+        "Discord": {
+            "text": "Discord",
+            "posX": 4,
+            "posY": 82,
+            "width": 55,
+            "height": 20,
+            "alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openLink",
+                "link": "https://discord.gg/BcueHsGh7h"
+            }
+        },
+        
+        "Changelog": {
+            "text": "Changelog",
+            "posX": 59,
+            "posY": 82,
+            "width": 68,
+            "height": 20,
+            "alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openGui",
+                "gui": "custom.changelog"
+            }
+        },
+        
+        "Logs": {
+            "text": "Logs",
+            "posX": 127,
+            "posY": 82,
+            "width": 42,
+            "height": 20,
+            "alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action":  {
+                "type": "openFolder",
+                "folderName":  "logs"
+            }
+        },
+        
+        "Wiki": {
+            "text": "Wiki",
+            "posX": 169,
+            "posY": 82,
+            "width": 45,
+            "height": 20,
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+			"alignment": "top_center",
+            "shadow": false,
+            "action": {
+                "type": "openLink",
+                "link": "https://pixelmongenerations.com/wiki"
+            }
+        },
+        
+        "version": {
+            "text": "It's more fun with friends!",
+            "posX": -75,
+            "posY": 70,
+            "width": 150,
+            "height": 12,
+            "alignment": "top_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "action": {
+                "type": "openLink",
+                "link": "https:/pixelmongenerations.com/servers"
+            }
+        },
+		
+        "server-PokeNinjas": {
+            "text": "",
+			"tooltip": "web:https://pastebin.com/raw/LDqGegtF",
+            "posX": -210,
+            "posY": 102,
+            "width": 137,
+            "height": 26,
+            "imageWidth": 274,
+            "imageHeight": 52,
+            "texture": "custommainmenu:textures/servers/pokeninjas.jpg",
+            "alignment": "top_center",
+            "action": {
+                "type": "connectToServer",
+                "ip": "PlayPokeNinjas.com"
+            }
+        },
+        "server-Harmony": {
+            "text": "",
+			"tooltip": "web:https://pastebin.com/raw/ynsMNGxE",
+            "posX": -68,
+            "posY": 102,
+            "width": 137,
+            "height": 26,
+            "imageWidth": 274,
+            "imageHeight": 52,
+            "texture": "custommainmenu:textures/servers/harmony.jpg",
+            "alignment": "top_center",
+            "action": {
+                "type": "connectToServer",
+                "ip": "play.pixelmonharmony.com"
+            }
+        },
+        "server-Dawn": {
+            "text": "",
+			"tooltip": "web:https://pastebin.com/raw/MGww85m0",
+            "normalTextColor": 6847986,
+            "hoverTextColor": 16777215,
+            "posX": 74,
+            "posY": 102,
+            "width": 137,
+            "height": 26,
+            "imageWidth": 274,
+            "imageHeight": 52,
+            "texture": "custommainmenu:textures/servers/dawn.jpg",
+            "alignment": "top_center",
+            "action": {
+                "type": "connectToServer",
+                "ip": "play.pixelmondawn.com"
+            }
+        },
+        "server-PokeMayhem": {
+            "text": "",
+			"tooltip": "web:https://pastebin.com/raw/gdgd66zJ",
+            "normalTextColor": 6847986,
+            "hoverTextColor": 16777215,
+            "posX": -210,
+            "posY": 132,
+            "width": 137,
+            "height": 26,
+            "imageWidth": 274,
+            "imageHeight": 52,
+            "texture": "custommainmenu:textures/servers/pokecrafts.jpg",
+            "alignment": "top_center",
+            "action": {
+                "type": "connectToServer",
+                "ip": "play.pokemayhem.com"
+            }
+        },
+        "server-PixelmonFate": {
+            "text": "",
+			"tooltip": "web:https://pastebin.com/raw/SXn4Umpp",
+            "normalTextColor": 6847986,
+            "hoverTextColor": 16777215,
+            "posX": -68,
+            "posY": 132,
+            "width": 137,
+            "height": 26,
+            "imageWidth": 274,
+            "imageHeight": 52,
+            "texture": "custommainmenu:textures/servers/eclipse.jpg",
+            "alignment": "top_center",
+            "action": {
+                "type": "connectToServer",
+                "ip": "play.pixelmondelta.com"
+            }
+        },
+        "server-PixelMMO": {
+            "text": "",
+			"tooltip": "web:https://pastebin.com/raw/MJc6surL",
+            "normalTextColor": 6847986,
+            "hoverTextColor": 16777215,
+            "posX": 74,
+            "posY": 132,
+            "width": 137,
+            "height": 26,
+            "imageWidth": 274,
+            "imageHeight": 52,
+            "texture": "custommainmenu:textures/servers/delta.jpg",
+            "alignment": "top_center",
+            "action": {
+                "type": "connectToServer",
+                "ip": "play.pokeislands.com"
+            }
+        },
+        "server-PokeSkies": {
+            "text": "",
+			"tooltip": "web:https://pastebin.com/raw/CHuuk6Av",
+            "normalTextColor": 6847986,
+            "hoverTextColor": 16777215,
+            "posX": -210,
+            "posY": 162,
+            "width": 137,
+            "height": 26,
+            "imageWidth": 274,
+            "imageHeight": 52,
+            "texture": "custommainmenu:textures/servers/pokeskies.jpg",
+            "alignment": "top_center",
+            "action": {
+                "type": "connectToServer",
+                "ip": "play.pokeskies.com"
+            }
+        },
+        "server-PixelmonUltra": {
+            "text": "",
+			"tooltip": "Click to play Pixelmon Ultra!",
+            "normalTextColor": 6847986,
+            "hoverTextColor": 16777215,
+            "posX": -68,
+            "posY": 162,
+            "width": 137,
+            "height": 26,
+            "imageWidth": 274,
+            "imageHeight": 52,
+            "texture": "custommainmenu:textures/servers/pixelmonultranew.jpg",
+            "alignment": "top_center",
+            "action": {
+                "type": "connectToServer",
+                "ip": "play.pixelmonultra.com"
+            }
+        },
+        "server-BallersPlutoGaming": {
+            "text": "",
+			"tooltip": "web:https://pastebin.com/raw/4N79uXYC",
+            "normalTextColor": 6847986,
+            "hoverTextColor": 16777215,
+            "posX": 74,
+            "posY": 162,
+            "width": 137,
+            "height": 26,
+            "imageWidth": 274,
+            "imageHeight": 52,
+            "texture": "custommainmenu:textures/servers/pixelballers.jpg",
+            "alignment": "top_center",
+            "action": {
+                "type": "connectToServer",
+                "ip": "play.pixelballers.com"
+            }
+        },
+        "server-Pokeunderground": {
+            "text": "",
+			"tooltip": "web:https://pastebin.com/raw/jiXa9d8r",
+            "normalTextColor": 6847986,
+            "hoverTextColor": 16777215,
+            "posX": -210,
+            "posY": 192,
+            "width": 137,
+            "height": 26,
+            "imageWidth": 274,
+            "imageHeight": 52,
+            "texture": "custommainmenu:textures/servers/pokeunderground.jpg",
+            "alignment": "top_center",
+            "action": {
+                "type": "connectToServer",
+                "ip": "play.pokeunderground.com"
+            }
+        },
+        "server-All": {
+            "text": "",
+            "normalTextColor": 6847986,
+            "hoverTextColor": 16777215,
+			"tooltip": "web:https://pastebin.com/raw/uUPkXyZC",
+            "posX": -68,
+            "posY": 192,
+            "width": 137,
+            "height": 26,
+            "imageWidth": 274,
+            "imageHeight": 52,
+            "texture": "custommainmenu:textures/gui/all.png",
+            "alignment": "top_center",
+            "action": {
+                "type": "openGui",
+                "gui": "multiplayer"
+            }
+        },
+		
+		"MoreServers": {
+            "text": "My Servers",
+            "posX": -80,
+            "posY": -20,
+            "width": 80,
+            "height": 20,
+			"alignment": "bottom_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action": {
+                "type": "openGui",
+                "gui": "multiplayer"
+            }
+        },
+		
+		"Back": {
+			"text": "Back",
+            "posX": 0,
+            "posY": -20,
+            "width": 41,
+            "height": 20,
+            "alignment": "bottom_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action":  {
+                "type" : "openGui",
+                "gui" : "custom.mainmenu"
+            }
+		},
+        
+        "Quit": {
+            "text": "Quit",
+            "posX": 41,
+            "posY": -20,
+            "width": 41,
+            "height": 20,
+            "alignment": "bottom_center",
+            "texture": "custommainmenu:textures/menu/button.png",
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16773148,
+            "shadow": false,
+            "action":  {
+                "type": "quit"
+            }
+        }
+	},
+    "labels": {
+
+    },
+    "other": { 
+        "background": {
+            "image": "custommainmenu:textures/menu/bg5.png",
+            "mode": "fill"
+        }
+    }
+}
