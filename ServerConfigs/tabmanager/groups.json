@@ -1,0 +1,19 @@
+{
+  "groupList": {
+    "HIGHEST_GROUP_(OWNER)": {
+      "name": "owner",
+      "prefix": "&9[Owner] ",
+      "suffix": ""
+    },
+    "LOWER_GROUP_(0)": {
+      "name": "group0",
+      "prefix": "&5[OP] ",
+      "suffix": ""
+    },
+    "LOWEST_GROUP(DEFAULT)": {
+      "name": "default",
+      "prefix": "&d[Player] ",
+      "suffix": ""
+    }
+  }
+}

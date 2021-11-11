@@ -1,0 +1,12 @@
+{
+  "options": {
+    "header": {
+      "type": "Header",
+      "display": "&b----------==[ &fLightning-MC.xyz &6Pixelmon &b]==----------\n\n&8[&aOnline&r&8] &r%server_online%/%server_max_players%   &8[&aTPS&8] &r%server_tps%/20.0\n"
+    },
+    "footer": {
+      "type": "Footer",
+      "display": "\n&aWins %trainer_wins% &r: &cLosses %trainer_losses% &r: &9WLRatio %trainer_wlratio% &r: &fDex %trainer_dexpercentage%\n&b------------------------------------------------"
+    }
+  }
+}

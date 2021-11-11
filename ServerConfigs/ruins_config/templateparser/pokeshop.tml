@@ -1,0 +1,340 @@
+
+# Created by Ruins mod version 17.2 Ingame Parser
+# authoring Player: JT122406
+
+# TEMPLATE PARAMETER SETTINGS:
+#
+# criterion expression specifying mod ids required to load template
+# may include plus (AND), minus (AND NOT), comma (OR), and parentheses
+# all required mods listed must be present; no prohibited mods can be
+requiredMods=
+#
+# likelihood this template will be chosen relative to all others
+# e.g., a weight=6 template is chosen 3X as often as one with weight=2
+weight=1
+#
+# list of dimensions in which this template may spawn, even if generic
+# one or more dimension names, separated by commas (blank = all)
+dimensionsToSpawnIn=
+#
+# list of other biomes in which this template may spawn
+# biome corresponding to directory is always assumed, listed or not
+# generic templates should leave this list empty
+biomesToSpawnIn=
+#
+# criterion expression specifying types of biome where template spawns
+# this is in addition to those explicitly listed as biomesToSpawnIn
+# generic templates should leave this list empty
+biomeTypesToSpawnIn=
+#
+# list of biomes in which this template may not spawn
+# takes precedence over biomeTypesToSpawnIn, but NOT biomesToSpawnIn
+# should be empty if biomeTypesToSpawnIn is empty
+biomesToNotSpawnIn=
+#
+# depth template is pushed down into the surface when built
+# offset is min/max range of random additional bury depth
+embed_into_distance=0
+random_height_offset=0,0
+#
+# whitelist/blacklist of block types on which template may be built
+# specify one, not both; leave the other empty (both empty = allow all)
+acceptable_target_blocks=
+unacceptable_target_blocks=flowing_water,water,flowing_lava,lava
+#
+# size of template (#layers, #rows per layer, #blocks per row)
+dimensions=10,16,21
+#
+# max number of missing blocks allowed in surface beneath template
+allowable_overhang=0
+#
+# depth/height limit affected by terrain leveling
+# also maximum bumpiness tolerated in surface beneath template
+max_leveling=2
+#
+# padding applied to all sides of template horizontal footprint
+# expands area affected by terrain leveling (-1 = no leveling)
+leveling_buffer=0
+#
+# do not rotate template randomly when built (1 = no rotation)
+preventRotation=0
+#
+# treat water/lava blocks as air and protect them from rule0 (1 = yes)
+preserve_water=0
+preserve_lava=0
+#
+# minimum distance this template must have from instances of itself
+uniqueMinDistance=0
+#
+# min/max distances this template can be from world spawn (0 = no limit)
+# only applies to overworld--i.e., dimension 0
+spawnMinDistance=0
+spawnMaxDistance=0
+#
+# other template built nearby whenever this one is
+# syntax: <name>;<relativeX>;<maxYdifference>;<relativeZ>[;<chance>]
+# may be used more than once to specify multiple neighbors
+adjoining_template=
+
+rule1=0,100,biomesoplenty:grass-4
+rule2=0,100,biomesoplenty:dirt-2
+rule3=0,100,minecraft:dirt-0
+rule4=0,100,minecraft:redstone_block-0
+rule5=0,100,biomesoplenty:planks_0-12
+rule6=0,100,biomesoplenty:leaves_3-14
+rule7=0,100,biomesoplenty:log_1-5
+rule8=0,100,minecraft:leaves-12
+rule9=0,100,biomesoplenty:magic_stairs-1
+rule10=0,100,minecraft:red_flower-8
+rule11=0,100,minecraft:stained_hardened_clay-9
+rule12=0,100,minecraft:concrete-7
+rule13=0,100,pixelmon:shopfront_case_2-6
+rule14=0,100,pixelmon:shopfront_case_2-9
+rule15=0,100,pixelmon:blue_vending_machine-9
+rule16=0,100,pixelmon:shopfront_case_1-6
+rule17=0,100,pixelmon:shopfront_case_1-9
+rule18=0,100,chisel:bookshelf_oak-0
+rule19=0,100,biomesoplenty:wood_slab_1-12
+rule20=0,100,natura:darkwood_trap_door-11
+rule21=0,100,biomesoplenty:double_wood_slab_1-4
+rule22=0,100,minecraft:stained_glass_pane-0
+rule23=0,100,pixelmon:lightblue_cushion_chair-2
+rule24=0,100,pixelmon:blue_cushion_chair-0
+rule25=0,100,pixelmon:shopfront_round_1-11
+rule26=0,100,pixelmon:shopfront_round_1-4
+rule27=0,100,pixelmon:blue_cushion_chair-2
+rule28=0,100,pixelmon:lightblue_cushion_chair-0
+rule29=0,100,pixelmon:shopfront_shelf_2-5
+rule30=0,100,pixelmon:shopfront_shelf_1-10
+rule31=0,100,pixelmon:shopfront_shelf_2-8
+rule32=0,100,pixelmon:shopfront_shelf_1-7
+rule33=0,100,pixelmon:shopfront_round_2-6
+rule34=0,100,pixelmon:shopfront_round_2-9
+rule35=0,100,natura:darkwood_trap_door-6
+rule36=0,100,natura:darkwood_trap_door-5
+rule37=0,100,pixelmon:trash_can-0
+rule38=0,100,natura:darkwood_trap_door-4
+rule39=0,100,biomesoplenty:planks_0-6
+rule40=0,100,pixelmon:shopfront_case_2-2
+rule41=0,100,pixelmon:shopfront_case_2-1
+rule42=0,100,pixelmon:blue_vending_machine-1
+rule43=0,100,pixelmon:shopfront_case_1-2
+rule44=0,100,pixelmon:shopfront_case_1-1
+rule45=0,100,pixelmon:pokedoll_wailmer-3
+rule46=0,100,biomesoplenty:mangrove_fence-0
+rule47=0,100,minecraft:flower_pot-0
+rule48=0,100,pixelmon:shopfront_round_1-3
+rule49=0,100,pixelmon:shopfront_round_1-0
+rule50=0,100,pixelmon:shopfront_shelf_2-1
+rule51=0,100,pixelmon:shopfront_shelf_1-2
+rule52=0,100,pixelmon:shopfront_shelf_2-0
+rule53=0,100,pixelmon:shopfront_shelf_1-3
+rule54=0,100,pixelmon:shopfront_round_2-2
+rule55=0,100,pixelmon:shopfront_round_2-1
+rule56=0,100,biomesoplenty:wood_slab_1-4
+rule57=0,100,pixelmon:blue_clock-2
+rule58=0,100,ChestGenHook:chests/simple_dungeon:5-5
+rule59=0,100,pixelmon:displayball_ultraball-3
+rule60=0,100,pixelmon:displayball_masterball-3
+rule61=0,100,pixelmon:displayball_pokeball-3
+rule62=0,100,pixelmon:displayball_greatball-3
+rule63=0,100,biomesoplenty:wood_slab_0-5
+rule64=0,100,biomesoplenty:double_wood_slab_0-5
+rule65=0,100,biomesoplenty:wood_slab_0-13
+rule66=0,100,biomesoplenty:log_1-9
+rule67=0,100,biomesoplenty:planks_0-5
+rule68=0,100,minecraft:concrete-11
+rule69=0,100,pixelmon:ghost_lantern-0
+rule70=0,100,pixelmon:pokemart_sign-0
+rule71=0,100,pixelmon:switch-1
+
+layer
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1
+1,1,1,1,2,2,2,2,2,0,2,2,2,2,2,2,2,1,1,1,1
+1,1,3,3,2,2,2,0,0,0,2,2,2,2,2,2,2,2,2,1,1
+1,3,3,3,3,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,1
+1,3,3,3,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,1
+1,3,0,0,0,5,0,0,0,0,0,0,0,0,2,4,2,2,2,2,1
+1,3,0,0,0,0,0,0,0,0,0,0,0,0,2,4,2,2,2,2,1
+1,3,0,0,0,0,0,0,0,0,0,0,0,0,2,4,2,2,2,2,1
+1,3,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,1
+1,2,3,3,0,0,0,0,0,0,0,0,0,0,2,2,2,2,1,2,1
+1,1,3,3,3,3,3,3,3,0,0,0,3,0,0,2,1,2,2,1,1
+1,1,1,1,2,3,3,3,3,5,0,0,3,3,3,6,6,1,1,1,1
+1,1,1,1,1,1,1,1,3,3,3,3,3,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,1,7,8,8,8,7,1,1,1,1,1,1,1,1
+1,1,1,1,1,1,1,7,9,9,9,9,9,7,1,1,1,1,1,1,1
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0
+0,0,0,0,2,2,2,2,5,5,5,5,5,2,2,2,2,0,0,0,0
+0,0,2,2,2,5,5,5,5,5,5,5,5,5,5,11,2,2,2,0,0
+0,2,3,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,2,2,0
+0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0
+0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0
+0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0
+0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0
+0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0
+0,2,2,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,2,0
+0,0,2,2,2,5,5,5,5,5,5,5,5,5,5,5,6,2,2,0,0
+0,0,0,0,2,2,2,2,12,5,5,5,12,2,2,2,2,0,0,0,0
+0,0,0,0,0,0,0,0,7,7,7,7,7,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,7,9,9,9,7,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,5,5,5,5,5,0,0,0,0,0,0,0,0
+0,0,0,0,5,5,5,5,17,16,15,14,13,5,5,5,5,0,0,0,0
+0,0,5,5,5,18,18,18,0,0,0,0,0,18,18,18,5,5,5,0,0
+0,5,5,0,20,0,0,0,0,0,0,0,0,0,0,0,19,0,5,5,0
+0,5,0,0,21,0,0,0,0,0,0,0,0,0,0,0,0,0,19,5,0
+0,22,0,0,19,0,0,0,26,25,0,0,0,24,7,23,0,0,19,22,0
+0,22,0,0,19,0,0,0,30,29,0,0,0,28,7,27,0,0,19,22,0
+0,22,0,0,19,0,0,0,32,31,0,0,0,24,7,23,0,0,19,22,0
+0,5,0,0,19,0,0,0,34,33,0,0,0,0,0,0,0,0,19,5,0
+0,5,5,21,21,35,0,0,0,0,0,0,0,0,0,35,19,0,5,5,0
+0,0,5,5,5,7,38,37,0,0,0,0,0,37,36,7,5,5,5,0,0
+0,0,0,0,5,5,5,5,7,0,0,0,7,5,5,5,5,0,0,0,0
+0,0,0,0,0,0,0,0,7,22,0,22,7,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,39,39,39,39,39,0,0,0,0,0,0,0,0
+0,0,0,0,39,39,39,39,44,43,42,41,40,39,39,39,39,0,0,0,0
+0,0,39,39,39,18,18,18,0,0,0,0,0,18,18,18,39,39,39,0,0
+0,39,39,0,0,0,0,0,0,0,0,0,0,0,0,0,45,19,39,39,0
+0,39,0,0,46,0,0,0,0,0,0,0,0,0,0,0,0,0,46,39,0
+0,22,0,0,0,0,0,0,49,48,0,0,0,0,47,0,0,0,0,22,0
+0,22,0,0,0,0,0,0,51,50,0,0,0,0,0,0,0,0,0,22,0
+0,22,0,0,0,0,0,0,53,52,0,0,0,0,0,0,0,0,47,22,0
+0,39,0,0,0,0,0,0,55,54,0,0,0,0,0,0,0,0,46,39,0
+0,39,39,0,46,0,0,0,0,0,0,0,0,0,0,0,0,19,39,39,0
+0,0,39,39,39,8,0,0,0,0,0,0,0,0,0,8,39,39,39,0,0
+0,0,0,0,39,22,22,22,7,0,0,0,7,22,22,22,39,0,0,0,0
+0,0,0,0,0,0,0,0,7,22,0,22,7,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,39,39,39,39,39,0,0,0,0,0,0,0,0
+0,0,0,0,39,39,39,39,0,19,19,19,0,39,39,39,39,0,0,0,0
+0,0,39,39,39,18,18,56,0,0,0,0,0,56,18,18,39,39,39,0,0
+0,39,39,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,39,0
+0,39,0,0,46,0,0,0,0,0,0,0,0,0,0,0,0,0,19,39,0
+0,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,0
+0,22,57,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,0
+0,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,0
+0,39,19,19,19,0,0,0,0,0,0,0,0,0,0,0,0,0,19,39,0
+0,39,39,21,21,0,0,0,0,0,0,0,0,0,0,0,0,0,39,39,0
+0,0,39,39,39,8,0,0,46,0,0,0,46,0,0,8,39,39,39,0,0
+0,0,0,0,39,22,22,22,7,0,0,0,7,22,22,22,39,0,0,0,0
+0,0,0,0,0,0,0,0,7,22,22,22,7,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,39,39,39,39,39,0,0,0,0,0,0,0,0
+0,0,0,0,39,39,39,39,19,46,58,46,19,39,39,39,39,0,0,0,0
+0,0,22,22,22,62,61,0,0,0,0,0,0,0,60,59,22,22,22,0,0
+0,22,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,22,0
+0,22,0,0,56,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,0
+0,22,0,0,56,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,0
+0,22,0,0,56,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,0
+0,22,0,0,56,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,0
+0,22,0,0,56,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,0
+0,22,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,22,0
+0,0,22,22,22,0,0,0,63,0,0,0,63,0,0,0,22,22,22,0,0
+0,0,0,0,39,39,39,39,64,65,65,65,64,39,39,39,39,0,0,0,0
+0,0,0,0,0,0,0,63,64,66,66,66,64,63,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,64,65,64,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,67,67,67,67,67,67,67,0,0,0,0,0,0,0
+0,0,0,0,0,67,67,67,68,67,67,67,68,67,67,67,0,0,0,0,0
+0,0,0,67,67,67,67,69,18,19,19,19,18,69,67,67,67,67,0,0,0
+0,0,67,67,67,0,0,0,0,0,0,0,0,0,0,0,67,67,67,0,0
+0,67,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,67,0
+0,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,0
+0,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,0
+0,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,0
+0,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,0
+0,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,0
+0,67,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,67,0
+0,0,67,67,67,0,0,0,0,0,0,0,0,0,0,0,67,67,67,0,0
+0,0,0,67,67,67,67,22,22,22,22,22,22,22,67,67,67,67,0,0,0
+0,0,0,0,67,67,67,0,0,63,70,63,0,0,67,67,67,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,67,67,67,67,67,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,67,67,67,67,67,67,67,67,67,0,0,0,0,0,0
+0,0,0,0,67,67,67,0,0,0,0,0,0,0,67,67,67,0,0,0,0
+0,0,0,67,67,67,69,0,0,0,0,0,0,0,69,67,67,67,0,0,0
+0,0,67,67,0,0,0,0,0,0,0,0,0,0,0,0,0,67,67,0,0
+0,0,67,67,0,0,0,0,0,0,0,0,0,0,0,0,0,67,67,0,0
+0,0,67,67,0,0,0,0,0,0,0,0,0,0,0,0,0,67,67,0,0
+0,0,67,67,0,0,0,0,0,0,0,0,0,0,0,0,0,67,67,0,0
+0,0,67,67,0,0,0,0,0,0,0,0,0,0,0,0,0,67,67,0,0
+0,0,0,67,67,67,69,0,0,0,0,0,0,0,69,67,67,67,0,0,0
+0,0,0,0,67,67,67,0,0,0,0,0,0,0,67,67,67,0,0,0,0
+0,0,0,0,0,67,67,67,67,22,22,22,67,67,67,67,0,0,0,0,0
+0,0,0,0,0,0,67,67,67,0,0,0,67,67,67,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,67,67,67,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,67,67,67,67,67,67,67,0,0,0,0,0,0,0
+0,0,0,0,0,67,67,67,67,67,67,67,67,67,67,67,0,0,0,0,0
+0,0,0,0,67,67,67,0,0,0,0,0,0,0,67,67,67,0,0,0,0
+0,0,0,67,67,67,0,0,0,0,0,0,0,0,0,67,67,67,0,0,0
+0,0,0,67,67,67,0,0,0,0,0,0,0,0,0,67,67,67,0,0,0
+0,0,0,67,67,67,0,0,0,0,0,0,0,0,0,67,67,67,0,0,0
+0,0,0,0,67,67,67,0,0,0,0,0,0,0,67,67,67,0,0,0,0
+0,0,0,0,0,67,67,67,0,0,0,0,0,67,67,67,0,0,0,0,0
+0,0,0,0,0,0,67,67,67,0,69,71,67,67,67,0,0,0,0,0,0
+0,0,0,0,0,0,0,67,67,67,67,67,67,67,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,67,67,67,67,67,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,67,67,67,67,67,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,67,67,67,67,67,67,67,67,67,0,0,0,0,0,0
+0,0,0,0,0,67,67,67,67,67,67,67,67,67,67,67,0,0,0,0,0
+0,0,0,0,0,67,67,67,67,67,67,67,67,67,67,67,0,0,0,0,0
+0,0,0,0,0,67,67,67,67,67,67,67,67,67,67,67,0,0,0,0,0
+0,0,0,0,0,0,67,67,67,67,67,67,67,67,67,0,0,0,0,0,0
+0,0,0,0,0,0,0,67,67,67,67,67,67,67,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,67,67,67,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
