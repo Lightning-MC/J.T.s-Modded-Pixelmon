@@ -1,3 +1,6 @@
 &a1: Be respectful.
 &a2: Be ethical.
 &a3: Use common sense.
+&a4: Server Staff have final decision on all issues
+&a5: Do not grief other players
+&a6: 

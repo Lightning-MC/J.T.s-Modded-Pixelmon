@@ -1,0 +1,15 @@
+2021-12-22 20:44:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1484)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1459)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:675)
+	at com.j256.ormlite.jdbc.JdbcDatabaseConnection.queryForOne(JdbcDatabaseConnection.java:305)
+	at com.j256.ormlite.jdbc.JdbcDatabaseConnection.queryForLong(JdbcDatabaseConnection.java:240)
+	at com.j256.ormlite.jdbc.JdbcDatabaseConnection.queryForLong(JdbcDatabaseConnection.java:234)
+	at com.j256.ormlite.jdbc.JdbcPooledConnectionSource.testConnection(JdbcPooledConnectionSource.java:352)
+	at com.j256.ormlite.jdbc.JdbcPooledConnectionSource$ConnectionTester.testConnections(JdbcPooledConnectionSource.java:505)
+	at com.j256.ormlite.jdbc.JdbcPooledConnectionSource$ConnectionTester.run(JdbcPooledConnectionSource.java:442)

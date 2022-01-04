@@ -145,6 +145,10 @@ General {
     dataSaveOnWorldSave=true
     # The minimum number of blocks away from the nearest player a Pokémon can be when despawned.
     despawnRadius=80
+    # If true, Pokemon will attack players with melee damage when attacked (requires canPokemonBeHit set to true)
+    doPokemonAttackPlayers=false
+    # Should Wither effect be applied when entering Ultra Space
+    doWitherEffect=true
     # 1/x chance of spawning a Dynamax Energy Beam
     dynamaxEnergyBeam=5000
     # The scale multiplier for Dynamax Multiplier

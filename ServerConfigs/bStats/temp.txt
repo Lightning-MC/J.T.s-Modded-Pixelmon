@@ -1,2 +1,2 @@
-io.github.flibio.economylite.bstats.Metrics
+me.rojo8399.placeholderapi.impl.Metrics
 Note: This class only exists for internal purpose. You can ignore it :)

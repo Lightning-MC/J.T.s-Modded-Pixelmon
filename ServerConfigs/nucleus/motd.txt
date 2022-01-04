@@ -1,1 +1,6 @@
 &eWelcome Lightning-MC.xyz Pixelmon server using J.T.'s Modded Pixelmon Modpack!
+Join our discord! &3https://discord.gg/JHMtWt4S9B
+claim land with &c/claim&r then select the corners of your claim
+run &c/skills&r to choose a class and unlock cool rewards as you play!
+If you want info about a particular pixelmon run &c/pwiki <name>&r and it'll return info about that pixelmon
+Run &c/dynamaxband&r to get your dynamax band!
